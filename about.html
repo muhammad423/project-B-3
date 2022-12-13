@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+
+  <!-- bootstrap-link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <!-- font-awsome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+  <!-- style-css  -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- responsive-css  -->
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+<!-- nav-bar  -->
+<nav class="navbar navbar-expand-lg bg-white fixed-top main-nav">
+  <div class="container nav-contaner">
+    <a class="navbar-brand" href="#">MENTOR</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ul-div" id="navbarNav">
+      <ul class="navbar-nav ms-auto ul-links">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="course.html">Course</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="trainers.html">Trainer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pricing.html">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="d-btn">
+        <button type="button" class="btn btn-sm"><a href="">Get Started</a></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- about-sec  -->
+<section class="about-sec p-5">
+  <div class="container">
+    <div class="text-center">
+      <h1>About US</h1>
+      <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit
+        quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium.</p>
+    </div>
+  </div>
+</section>
+
+<!-- detail-sec  -->
+<section class="detail-sec p-5">
+  <div class="container detail-contner">
+    <div class="row justify-content-center align-content-center detail-div1">
+      <div class="col-lg-6 detail-div2">
+        <h3>
+          Voluptatem dignissimos provident quasi corporis voluptates sit
+          assumenda.
+        </h3>
+
+        <p class="p-one">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <p>
+          <i class="fa-regular fa-circle-check"></i> Ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+
+        <p>
+          <i class="fa-regular fa-circle-check"></i> Duis aute irure dolor
+          in reprehenderit in voluptate velit.
+        </p>
+
+        <p>
+          <i class="fa-regular fa-circle-check"></i> Ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate trideta storacalaperda mastiro dolore
+          eu fugiat nulla pariatur.
+        </p>
+        <p>
+          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate
+        </p>
+      </div>
+
+      <div class="col-lg-6">
+        <img src="./img/about.jpg" class="img-fluid" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- count-area -->
+  <div class="container p-3 my-5 bg-light">
+    <div class="row justify-content-around align-content-center">
+      <div class="col-2">
+        <h1>1232</h1>
+        <h6>Students</h6>
+      </div>
+
+      <div class="col-2">
+        <h1>46</h1>
+        <h6>Courses</h6>
+      </div>
+
+      <div class="col-2">
+        <h1>46</h1>
+        <h6>Events</h6>
+      </div>
+
+      <div class="col-2">
+        <h1>15</h1>
+        <h6>Trainers</h6>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- about-cards  -->
+<div class="container-xl">
+  <div class="row">
+    <div class="col-sm-12">
+      <h6 class="text-center">Testomonial</h6>
+      <h2>What <b>our customers</b> are saying</h2>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="media">
+                  <img src="./img/testimonials-2.jpg" class="mr-3" alt="">
+                  <div class="media-body">
+                    <div class="testimonial">
+                      <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam
+                        luctus dui. Mauris magna metus nec.</p>
+                      <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="media">
+                  <img src="./img/testimonials-5.jpg" class="mr-3" alt="">
+                  <div class="media-body">
+                    <div class="testimonial">
+                      <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt.
+                        Utmtc tempus dictum. Pellentesque virra.</p>
+                      <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="media">
+                  <img src="./img/testimonials-3.jpg" class="mr-3" alt="">
+                  <div class="media-body">
+                    <div class="testimonial">
+                      <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam
+                        luctus dui. Mauris magna metus nec.</p>
+                      <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="media">
+                  <img src="./img/testimonials-2.jpg" class="mr-3" alt="">
+                  <div class="media-body">
+                    <div class="testimonial">
+                      <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt.
+                        Utmtc tempus dictum. Pellentesque virra.</p>
+                      <p class="overview"><b>Mary Saveley</b>, Web Designer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="media">
+                  <img src="./img/testimonials-5.jpg" class="mr-3" alt="">
+                  <div class="media-body">
+                    <div class="testimonial">
+                      <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam
+                        luctus dui. Mauris magna metus nec.</p>
+                      <p class="overview"><b>Martin Sommer</b>, UX Analyst</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="media">
+                  <img src="./img/testimonials-5.jpg" class="mr-3" alt="">
+                  <div class="media-body">
+                    <div class="testimonial">
+                      <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt.
+                        Utmtc tempus dictum. Pellentesque virra.</p>
+                      <p class="overview"><b>John Williams</b>, Web Developer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- footer-sec  -->
+
+ <section class="footer-sec py-5 mt-5">
+  <div class="container my-5">
+    <!-- Footer -->
+    <footer
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section >
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Mentor
+              </h6>
+              <p>
+                A108 Adam Street <br>
+                New York, NY 535022 <br>
+                United States
+              </p>
+              <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Usefull Links</h6>
+              <p>
+                <a class="text-dark text-decoration-none"> <span style="color: #5fcf80;"> > </span> Home</a>
+              </p>
+              <p>
+                <a class="text-dark text-decoration-none"><span style="color: #5fcf80;"> > </span>About us</a>
+              </p>
+              <p>
+                <a class="text-dark text-decoration-none"><span style="color: #5fcf80;"> > </span>
+                  Services</a>
+              </p>
+              <p>
+                <a class="text-dark text-decoration-none"><span style="color: #5fcf80;"> > </span>
+                  Terms of service</a>
+              </p>
+              <p>
+                <a class="text-dark text-decoration-none"><span style="color: #5fcf80;"> > </span>Privacy policy</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Our Services
+              </h6>
+              <p>
+                <a class="text-dark text-decoration-none"><span style="color: #5fcf80;"> > </span>Web Design</a>
+              </p>
+              <p>
+                <a class="text-dark text-decoration-none"><span style="color: #5fcf80;"> > </span>Web Development</a>
+              </p>
+              <p>
+                <a class="text-dark text-decoration-none w-100"><span style="color: #5fcf80;"> > </span>Marketing</a>
+              </p>
+              <p>
+                <a class="text-dark text-decoration-none "><span style="color: #5fcf80;"> > </span>Product</a>
+              </p>
+              <p>
+                <a class="text-dark text-decoration-none"><span style="color: #5fcf80;"> > </span>
+                  Graphic Design</a>
+              </p>
+              <p>
+              
+            </div>
+  
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Join Our Newsletter</h6>
+              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+              <div class="input-group">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-primary">search</button>
+              </div>
+              
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+  
+        <!-- Section: Copyright -->
+      
+        <!-- Section: Copyright -->
+      </div>
+      <!-- Grid container -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+</section>
+
+<!-- last-footer  -->
+<section class="p-3  bg-secondary ">
+  <div class="container">
+  <div class="row d-flex align-items-center">
+    <!-- Grid column -->
+    <div class="col-md-6 col-lg-8  text-md-start">
+      <!-- Copyright -->
+      <div class=" mt-3 text-center text-md-start">
+       <h6>© Copyright Mentor. All Rights Reserved</h6> 
+       <p>Designed by <span class="text-danger"> BootstrapMade</span></p>
+        
+      </div>
+      <!-- Copyright -->
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-6 col-lg-4 ml-lg-0 text-center text-md-end">
+      <!-- Facebook -->
+      <a
+         class="btn btn-outline-dark btn-floating m-1"
+         class="text-dark"
+         role="button"
+         ><i class="fab fa-facebook-f"></i
+        ></a>
+
+      <!-- Twitter -->
+      <a
+         class="btn btn-outline-dark btn-floating m-1"
+         class="text-dark"
+         role="button"
+         ><i class="fab fa-twitter"></i
+        ></a>
+
+      <!-- Google -->
+      <a
+         class="btn btn-outline-dark btn-floating m-1"
+         class="text-dark"
+         role="button"
+         ><i class="fab fa-google"></i
+        ></a>
+
+      <!-- Instagram -->
+      <a
+         class="btn btn-outline-dark btn-floating m-1"
+         class="text-dark"
+         role="button"
+         ><i class="fab fa-instagram"></i
+        ></a>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- container -->
+</div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
